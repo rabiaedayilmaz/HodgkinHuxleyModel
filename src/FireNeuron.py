@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 
-from CellMembraneKinetics import MembraneKinetics, MembraneCurrents
+from CellMembrane import MembraneKinetics, MembraneCurrents
 
 mbk = MembraneKinetics()
 
