@@ -58,7 +58,9 @@ As a result, resting membrane potential is determined by the balance of ion conc
 
 **REFERENCES**
 [1] Baek, K. (2018, May 31). Introduction to Electrophysiology. https://gate.nmr.mgh.harvard.edu/wiki/whynhow/images/e/eb/WhyNHow-Electrophysiology.pdf
+
 [2] Henley, C. (2021). Membrane Potential. In Pressbooks. https://openbooks.lib.msu.edu/neuroscience/chapter/membrane-potential/
+
 [3] Gilbert-Kawai, E., & Wittenberg, M. (2014). Goldman equation. Cambridge University Press EBooks, 149–150. https://doi.org/10.1017/cbo9781139565387.077
 
 
@@ -113,5 +115,6 @@ The Hodgkin-Huxley is a fundamental model in neuroscience and provides insight i
 
 REFERENCES
 [1], [2] Hodgkin, A. L., & Huxley, A. F. (1952). A quantitative description of membrane current and its application to conduction and excitation in nerve. The Journal of Physiology, 117(4), 500–544. https://doi.org/10.1113/jphysiol.1952.sp004764
+
 [3] Mertens, D. R. (1977). Principles of Modeling and Simulation in Teaching and Research. Journal of Dairy Science, 60(7), 1176–1186. https://doi.org/10.3168/jds.s0022-0302(77)84005-8
 
