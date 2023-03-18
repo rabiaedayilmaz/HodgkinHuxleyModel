@@ -2,11 +2,11 @@
 
 ## How to Use
 
-[ ] coming soon idk 
+- [ ] coming soon idk 
 
-[ ] also web interface because we love user friendly apps
+- [ ] also web interface because we love user friendly apps
 
-[ ] fix this fckn latex problem
+- [ ] fix this fckn latex problem
 
 ## Theory
 ### Part 1
