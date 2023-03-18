@@ -8,6 +8,8 @@
 
 - [ ] fix this fckn latex problem
 
+- [ ] read/review this readme once for gods sake 
+
 ## Theory
 ### Part 1
 The electrical properties of cells play a fundamental role in many biological processes. The membrane potential, which is the potential difference across the membrane is a critical aspect of physiology. Nernst equation and Goldman equation are widely used to understand and calculate resting membrane potential and movement of ions in the membrane. The Nernst equation describes the equilibrium potential for a single ion based on its concentration gradient and the membrane potential. On the other hand, the Goldman equation considers the permeability of the membrane for different ions and their respective concentration gradients. In this study, the fundamentals of membrane potential, the Nernst equation, and the Goldman equation will be described.
