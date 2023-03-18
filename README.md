@@ -28,7 +28,7 @@ $$\E^0=E_{reduction}^0-E_{oxidation}^0\ \ \ \ (1)
 
 $$ ∆G=-nFE\ \ \ \ (2)
 
-Under standard a condition, Equation 2 can be described as following.
+Under a standard condition, Equation 2 can be described as following.
 
 $$ ∆G0=-nFE{0}\ \ \ \ (3)
 
