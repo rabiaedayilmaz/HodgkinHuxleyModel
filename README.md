@@ -4,9 +4,9 @@
 
 - [ ] coming soon idk 
 
-- [ ] also web interface because we love user friendly apps
+- [x] also web interface because we love user friendly apps
 
-- [ ] fix this fckn latex problem
+- [x] fix this fckn latex problem
 
 - [ ] read/review this readme once for gods sake 
 
