@@ -61,20 +61,36 @@ The $lnQ expression can be converted to base 10 from e. This conversion takes re
 \ln{x\ =\ 2.303\times\ \log_{10}{x\ \ \ \ (7)}}
 ```
 
-To prove the Equation 7, substituting x by 10 is enough as ln10\ =\ 2.303\times1 is obtained that is true and consistent. By using the property of Equation 7 and applying it to Equation 6, this simplified equation is obtained.
+To prove the Equation 7, substituting x by 10 is enough as 
+```math
+ln10\ =\ 2.303\times1
+```
+is obtained that is true and consistent. By using the property of Equation 7 and applying it to Equation 6, this simplified equation is obtained.
 
 ```math
 E\ =\ E^0\ -\ \frac{2.303RT}{nF}\log_{10}{Q\ \ \ \ (8)}
 ```
 
-At standard temperature (25OC) T equals 298OK. On the other hand, R and F are constants. Thus, for further simplification $\frac{RT}{F} can be written as 0.0592 V. Finally, Equation 8 can be written as this.
+At standard temperature (25OC) T equals 298OK. On the other hand, R and F are constants. Thus, for further simplification 
+```math
+\frac{RT}{F}
+```
+can be written as 0.0592 V. Finally, Equation 8 can be written as this.
 
 ```math
 E\ =\ E^0\ -\ \frac{0.0592V}{n}\log_{10}{Q\ \ \ \ (9)}
 ```
 
 **Goldman-Hodgkin-Katz Equation:**  While the Nernst Equation provides a quantitative measure of equality that exists between chemical and electrical gradients for individual ions, Goldman Equation calculates the predicted resting membrane potential that reflects the relative contributions of the chemical concentration gradients and relative membrane permeability for a multitude ions collectively[^3]. 
-It is described as following, where Em is the membrane potential, R is the universal gas constant, T is the temperature in Kelvin, F is the Faraday constant, pM is the permeability for M+/- and [M+/-] is the concentration of M+/- for input(in) or output(out).
+It is described as following, where Em is the membrane potential, R is the universal gas constant, T is the temperature in Kelvin, F is the Faraday constant, pM is the permeability for 
+```math
+M+/-
+```
+and 
+```math
+[M+/-]
+```
+is the concentration of M+/- for input(in) or output(out).
 
 ```math
 E_m=\frac{RT}{F}\ln{\left(\frac{\sum_{i}^{n}{P_{M_i^+}\left[M_i^+\right]_{out}+}\sum_{j}^{m}{P_j^-\left[A_j^-\right]_{in}}}{\sum_{i}^{n}{P_{M_i^+}\left[M_i^+\right]_{in}+}\sum_{j}^{m}{P_j^-\left[A_j^-\right]_{out}}}\right)}\ \ \ \ (10)
@@ -99,7 +115,11 @@ As a result, resting membrane potential is determined by the balance of ion conc
 
 ### Part 2
 A system is formed by a group of interacting elements that are affiliated to a set of rules to obtain desired or reasonable output for a given input. Modeling is an essential tool and simulation is a crucial test mechanism for engineers and scientists. 
-Hodgkin-Huxley (HH) [1] conducted experiments on the giant axon and found three different types of ion current that are sodium, potassium, and a leak current that consists of {Cl}^-\ ions. The core of mathematical framework of this model was developed around 1950s by Alan Hodgkin and Andrew Huxley [2]. They demonstrated that there is a flow of those ions through the cell membrane and specific voltage dependent ion channels, one is for sodium and another one is for potassium, controls this flow. 
+Hodgkin-Huxley (HH) [1] conducted experiments on the giant axon and found three different types of ion current that are sodium, potassium, and a leak current that consists of 
+```math
+{Cl}^-\
+```
+ions. The core of mathematical framework of this model was developed around 1950s by Alan Hodgkin and Andrew Huxley [2]. They demonstrated that there is a flow of those ions through the cell membrane and specific voltage dependent ion channels, one is for sodium and another one is for potassium, controls this flow. 
 
 The semipermeable cell membrane separates the interior of the cell
 from the extracellular liquid and membrane acts as a capacitor. Moreover, if an input 
@@ -123,13 +143,29 @@ The conversation of electrical charge on the membrane is described as:
 I(t)=\ I_c(t)+\sum_{k}{I_k(t)}\ \ \ \ (1)
 ```
   
-Equation (1) implies the applied current I(t) can be split in a capacitive IC that charges the capacitor C  and moreover components I_{k\ }that pass through ion channels where summation contains all ion channels. From the equation of $C\ =\ \frac{q}{u} where q is the charge and u is the voltage across the capacitor, the charging current can be written as $I_c(t)\ =\ C\frac{du}{dt}. From there, applying to Equation 1, it is obtained:
+Equation (1) implies the applied current I(t) can be split in a capacitive IC that charges the capacitor C  and moreover components 
+```math
+I_{k\ }
+```
+that pass through ion channels where summation contains all ion channels. From the equation of 
+```math
+C\ =\ \frac{q}{u}
+```
+where q is the charge and u is the voltage across the capacitor, the charging current can be written as 
+```math
+I_c(t)\ =\ C\frac{du}{dt}
+```
+. From there, applying to Equation 1, it is obtained:
 
 ```math
 C\frac{du}{dt}=-\sum_{k}{I_k(t)+I(t)}\ \ \ \ (2)
 ```
   
-Overall, in biological terms, u is the voltage across the membrane and -\sum_{k}{I_k(t)} is the summation of the ionic currents that pass through the cell membrane.
+Overall, in biological terms, u is the voltage across the membrane and 
+```math
+-\sum_{k}{I_k(t)}
+```
+is the summation of the ionic currents that pass through the cell membrane.
 If Kirchhoff’s Current Law, that states summation of currents equals zero, is applied to Figure 1, while assuming total voltage across membrane that is between inside and outside nodes Vm and summation of all currents across membrane (INa, IK, IL) is Im, firstly this KCL equation is obtained:
 
 ```math
@@ -139,7 +175,7 @@ I_{Na}+I_K+I_L+I_C-I_{ext}=0 \ \ \ \ (3)
 Stating this equation for membrane:
 
 ```math
-I_C=\ C_m\times\sfrac{dV_m}{dt} \ \ \ \ (4)
+I_C=\ C_m\times\frac{dV_m}{dt} \ \ \ \ (4)
 ```
   
 By substituting Equation 4 to Equation 3, finally obtained:
