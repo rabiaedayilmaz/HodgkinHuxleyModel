@@ -47,6 +47,40 @@
         </nav></strong>
       </div>
     </header>
+    <div class="control-panel">
+        <h2>Initial Parameters<br>Control Panel</h2>
+        <form action="/updated_params" method = "POST">
+            <label>Membrane Voltage</label>
+                <input type = "text" name = "membrane_voltage" value="{{membrane_voltage}}" />
+            <br>
+            <label>Observation Time</label>
+             <input type = "text" name = "obv_time" value="{{obv_time}}" />
+            <br>
+            <label>m Gating Variable</label>
+             <input type = "text" name = "m" value="{{m}}" />
+            <br>
+            <label>n Gating Variable</label>
+             <input type = "text" name = "n" value="{{n}}" />
+            <br>
+            <label>h Gating Variable</label>
+             <input type = "text" name = "h" value="{{h}}" />
+            <br>
+            <label>Na+ Conductance</label>
+             <input type = "text" name = "g_Na "value="{{g_Na}}" />
+            <br>
+            <label>K+ Conductance</label>
+             <input type = "text" name = "g_K" value="{{g_K}}" />
+            <br>
+            <label>Leakage Conductance</label>
+             <input type = "text" name = "g_L" value="{{g_L}}" />
+            <br>
+            <input type = "submit" value = "APPLY" />
+        </form>
+        <br>
+        <br>
+            <a href="{{ url_for('index') }}"><button>RESET</button></a>
+    </div>
+
     <div class="footer">
         <p class="author">
             <a href = "mailto: edayilmxz@outlook.com" style="color:#EDEADE;">Contact Me</a><br>
