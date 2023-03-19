@@ -6,7 +6,7 @@
 
 - [x] also web interface because we love user friendly apps
 
-- [ ] fix this fckn latex problem
+- [x] fix this fckn latex problem
 
 - [ ] read/review this readme once for gods sake 
 
@@ -69,7 +69,7 @@ E\ =\ E^0\ -\ \frac{2.303RT}{nF}\log_{10}{Q\ \ \ \ (8)}
 
 At standard temperature (25OC) T equals 298OK. On the other hand, R and F are constants. Thus, for further simplification $\frac{RT}{F} can be written as 0.0592 V. Finally, Equation 8 can be written as this.
 
-```
+```math
 E\ =\ E^0\ -\ \frac{0.0592V}{n}\log_{10}{Q\ \ \ \ (9)}
 ```
 
@@ -82,7 +82,7 @@ E_m=\frac{RT}{F}\ln{\left(\frac{\sum_{i}^{n}{P_{M_i^+}\left[M_i^+\right]_{out}+}
 
 It is a resonance the Nernst Equation but has a term for each permeant ion. For instance, to calculate Na+, K+ and Cl- membrane potentials, the Equation 10 will be taken as template, and final equation can be written and calculated.
 
-```
+```math
 E_m=\frac{RT}{F}\ln{\left(\frac{\sum_{i}^{n}{P_{K^+}\left[K_i^+\right]_{out}+\sum_{k}^{l}{P_{{Na}^+}\left[{Na}_k^+\right]_{out}}+}\sum_{j}^{m}{P_{{Cl}^-}^-\left[{Cl}_j^-\right]_{in}}}{\sum_{i}^{n}{P_{K^+}\left[K_i^+\right]_{in}+\sum_{k}^{l}{P_{{Na}^+}\left[{Na}_k^+\right]_{in}}+}\sum_{j}^{m}{P_{{Cl}^-}^-\left[{Cl}_j^-\right]_{out}}}\right)}\ \ \ \ (11)
 ```
 
@@ -145,11 +145,38 @@ I_C=\ C_m\times\sfrac{dV_m}{dt} \ \ \ \ (4)
 By substituting Equation 4 to Equation 3, finally obtained:
 
 ```math
-\sfrac{{dV}_m}{dt}=\ \sfrac{(I_{ext}-I_{Na}-I_K-I_L)}{C_m} \ \ \ \ (5)
+\frac{{dV}_m}{dt}=\ \frac{(I_{ext}-I_{Na}-I_K-I_L)}{C_m} \ \ \ \ (5)
 ```
   
-The voltage-independent conductance of leakage channel is ```math g_L=\sfrac{1}{R_L}```, the voltage at the leak resistor is ```math (u-E_L)```, and by Ohm’s Law the leak current is obtained as ```math I_L=g_L\left(u-E_L\right)```.
-If all channels are open, they transmit currents with a maximum conductance $g_{Na} and $g_{K}, respectively. However, normally some channel will be blocked. The advancement of HH model is that it demonstrates us how the effective resistance of a channel changes as a function of time and voltage. They also introduced gating variables, m, n, and h to model that are the probability of that a channel is open at a given moment in time. The combination of m and h controls the Na+ channels and K+ gates are controlled by n. The conductance of sodium channels can be modeled as ```math \sfrac{1}{R_{Na}=g_{Na}m^3h}``` while m is the activation of the channel and h is inactivation. The conductance of potassium is ```math \sfrac{1}{R_K=g_Kn^4}``` while n is the activation of the channel. 
+The voltage-independent conductance of leakage channel is 
+```math 
+g_L=\frac{1}{R_L}
+```
+, the voltage at the leak resistor is 
+```math
+(u-E_L)
+```
+,and by Ohm’s Law the leak current is obtained as 
+```math
+I_L=g_L\left(u-E_L\right)
+```
+.If all channels are open, they transmit currents with a maximum conductance 
+```math
+g_{Na}
+```
+and 
+```math
+g_{K}
+```
+, respectively. However, normally some channel will be blocked. The advancement of HH model is that it demonstrates us how the effective resistance of a channel changes as a function of time and voltage. They also introduced gating variables, m, n, and h to model that are the probability of that a channel is open at a given moment in time. The combination of m and h controls the Na+ channels and K+ gates are controlled by n. The conductance of sodium channels can be modeled as 
+```math
+\frac{1}{R_{Na}=g_{Na}m^3h}
+```
+while m is the activation of the channel and h is inactivation. The conductance of potassium is 
+```math 
+\frac{1}{R_K=g_Kn^4}
+```
+while n is the activation of the channel. 
 Finally, Hodgkin and Huxley formulated the three ion currents on the Equation 2 and obtained:
 
 ```math
