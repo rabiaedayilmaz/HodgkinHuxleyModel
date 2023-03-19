@@ -29,12 +29,12 @@ E^0=E_{reduction}^0-E_{oxidation}^0\ \ \ \ (1)
 ΔG is also related to E under general conditions (standard or not), where n is the number of electrons transferred in the reaction from balanced reaction, F is the Faraday constant (96,500 C/mol), and E is potential difference.
 
 ```math
-$$ ∆G=-nFE\ \ \ \ (2)
+∆G=-nFE\ \ \ \ (2)
 ```
 Under a standard condition, Equation 2 can be described as following.
 
 ```math
-$$ ∆G0=-nFE{0}\ \ \ \ (3)
+∆G0=-nFE{0}\ \ \ \ (3)
 ```
 
 According to Equation 3, when E0 is positive, the reaction is spontaneous and when E0 is negative, the reaction is non-spontaneous. From the thermodynamics, the Gibbs energy change under non-standard conditions can be expressed using Gibbs energy under standard conditions equation.
@@ -43,7 +43,7 @@ According to Equation 3, when E0 is positive, the reaction is spontaneous and wh
 ∆G = ∆G{0} + RTlnQ\ \ \ \ (4)
 ```
 
-By substituting $∆G{0} expression with Equation 3 and $∆G expression with Equation 4, the overall equation turns into this.
+By substituting ∆G{0} expression with Equation 3 and ∆G expression with Equation 4, the overall equation turns into this.
 
 ```math
 -nFE\ =\ {-nFE}^0\ +\ RT\ln{Q\ \ \ \ (5)}
@@ -55,7 +55,7 @@ By dividing both side of the Equation 5 with nF, this will be obtained.
 E\ =\ E^0\ -\ \frac{RT}{nF}\ln{Q\ \ \ \ (6)}
 ```
 
-The $lnQ expression can be converted to base 10 from e. This conversion takes reference from the common chemistry equation.
+The lnQ expression can be converted to base 10 from e. This conversion takes reference from the common chemistry equation.
 
 ```math
 \ln{x\ =\ 2.303\times\ \log_{10}{x\ \ \ \ (7)}}
@@ -115,11 +115,7 @@ As a result, resting membrane potential is determined by the balance of ion conc
 
 ### Part 2
 A system is formed by a group of interacting elements that are affiliated to a set of rules to obtain desired or reasonable output for a given input. Modeling is an essential tool and simulation is a crucial test mechanism for engineers and scientists. 
-Hodgkin-Huxley (HH) [1] conducted experiments on the giant axon and found three different types of ion current that are sodium, potassium, and a leak current that consists of 
-```math
-{Cl}^-\
-```
-ions. The core of mathematical framework of this model was developed around 1950s by Alan Hodgkin and Andrew Huxley [2]. They demonstrated that there is a flow of those ions through the cell membrane and specific voltage dependent ion channels, one is for sodium and another one is for potassium, controls this flow. 
+Hodgkin-Huxley (HH) [1] conducted experiments on the giant axon and found three different types of ion current that are sodium, potassium, and a leak current that consists of Cl- ions. The core of mathematical framework of this model was developed around 1950s by Alan Hodgkin and Andrew Huxley [2]. They demonstrated that there is a flow of those ions through the cell membrane and specific voltage dependent ion channels, one is for sodium and another one is for potassium, controls this flow. 
 
 The semipermeable cell membrane separates the interior of the cell
 from the extracellular liquid and membrane acts as a capacitor. Moreover, if an input 
@@ -185,26 +181,18 @@ By substituting Equation 4 to Equation 3, finally obtained:
 ```
   
 The voltage-independent conductance of leakage channel is 
+  
 ```math 
 g_L=\frac{1}{R_L}
 ```
-, the voltage at the leak resistor is 
-```math
-(u-E_L)
-```
-,and by Ohm’s Law the leak current is obtained as 
+  
+, the voltage at the leak resistor is (u-E_L), and by Ohm’s Law the leak current is obtained as:
+  
 ```math
 I_L=g_L\left(u-E_L\right)
 ```
-.If all channels are open, they transmit currents with a maximum conductance 
-```math
-g_{Na}
-```
-and 
-```math
-g_{K}
-```
-, respectively. However, normally some channel will be blocked. The advancement of HH model is that it demonstrates us how the effective resistance of a channel changes as a function of time and voltage. They also introduced gating variables, m, n, and h to model that are the probability of that a channel is open at a given moment in time. The combination of m and h controls the Na+ channels and K+ gates are controlled by n. The conductance of sodium channels can be modeled as 
+.If all channels are open, they transmit currents with a maximum conductance g_Na and g_K, respectively. However, normally some channel will be blocked. The advancement of HH model is that it demonstrates us how the effective resistance of a channel changes as a function of time and voltage. They also introduced gating variables, m, n, and h to model that are the probability of that a channel is open at a given moment in time. The combination of m and h controls the Na+ channels and K+ gates are controlled by n. The conductance of sodium channels can be modeled as
+  
 ```math
 \frac{1}{R_{Na}=g_{Na}m^3h}
 ```
