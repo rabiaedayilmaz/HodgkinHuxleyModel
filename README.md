@@ -4,7 +4,7 @@
 
 - [ ] coming soon idk 
 
-- [ ] also web interface because we love user friendly apps
+- [x] also web interface because we love user friendly apps
 
 - [ ] fix this fckn latex problem
 
