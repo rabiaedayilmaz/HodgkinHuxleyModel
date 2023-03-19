@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hodgkin-Huxley Model</title>
+    <style type="text/css">
+        .header{
+            text-align: center;
+            background-color: rgb(106,90,205);
+            height: 70px;
+            line-height: 70px;
+            color: #F5F5DC;
+        }
+        .chart2{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .footer{
+            background-color: rgb(106,90,205);
+            height: 50px;
+        }
+        .author {
+            padding-top:7px;
+            padding-left: 15px;
+            color:#EDEADE;
+        }
+        body {
+            background-color: #F9F6EE;
+        }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2>
+            Gating Variable Change
+        </h2>
+    </div>
+    <button onclick="goBack()">Go Back</button>
+
+    <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+    <div id="chart2" class="chart2"></div>
+    <div class="footer">
+        <p class="author">
+            <a href = "mailto: edayilmxz@outlook.com" style="color:#EDEADE;">Contact Me</a><br>
+            By Rabia Eda Yilmaz
+        </p>
+    </div>
+</body>
+    <script type="text/javascript">
+
+        var graph2 = {{graphJSON | safe}};
+        Plotly.plot('chart2',graph2,{});
+
+    </script>
+</html>

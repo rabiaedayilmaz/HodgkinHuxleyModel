@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hodgkin-Huxley Model</title>
+    <style type="text/css">
+        .header{
+            text-align: center;
+            background-color: rgb(106,90,205);
+            height: 70px;
+            line-height: 70px;
+            color: #F5F5DC;
+        }
+        .chart{
+            margin-top: 30px;
+            text-align: center;
+        }
+                .footer{
+            background-color: rgb(106,90,205);
+            height: 50px;
+        }
+        .author {
+            padding-top:7px;
+            padding-left: 15px;
+            color:#EDEADE;
+        }
+        body {
+            background-color: #F9F6EE;
+        }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2>
+            Membrane Current Change in mA
+        </h2>
+    </div>
+    <button onclick="goBack()">Go Back</button>
+
+    <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+    <div id="chart1" class="chart1"></div>
+    <div class="footer">
+        <p class="author">
+            <a href = "mailto: edayilmxz@outlook.com" style="color:#EDEADE;">Contact Me</a><br>
+            By Rabia Eda Yilmaz
+        </p>
+    </div>
+</body>
+    <script type="text/javascript">
+
+        var graph1 = {{graphJSON | safe}};
+        Plotly.plot('chart1',graph1,{});
+
+    </script>
+</html>

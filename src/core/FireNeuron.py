@@ -1,7 +1,8 @@
+import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 
-from CellMembrane import MembraneKinetics, MembraneCurrents
+from src.core.CellMembraneKinetics import MembraneKinetics, MembraneCurrents
 
 mbk = MembraneKinetics()
 
@@ -36,6 +37,7 @@ def dALLdt(X, t):
      Since V, m, h, n are changes by time
      It calculates derivatives of V, m, h, and n
     """
+
     V, m, h, n = X  # extract values
 
     # calculate membrane potential & activation variables
@@ -48,7 +50,17 @@ def dALLdt(X, t):
 
 class Neuron:
     """ Fires neuron and plot graphs """
+
     def __init__(self, membrane_coef=mbk.membrane_coef, t=mbk.t):
+        self.membrane_coef = membrane_coef
+        # calculate neuron data
+        #V, m, h, n, ina, ik, il = self.generate_neuron_data(membrane_coef)
+        # plot the signal
+        #self.plot_signal(V, t, m, h, n, ina, ik, il)
+
+    def generate_neuron_data(self, membrane_coef):
+        """ Calculates the data to plot (voltage, currents, and gate probabilities) """
+
         X = odeint(dALLdt, membrane_coef, t)    # takes integral to find new values of V, m, h, n
 
         # extract values from array
@@ -62,11 +74,11 @@ class Neuron:
         ik = mbc.I_K(V, n)
         il = mbc.I_L(V)
 
-        # plot the signal
-        self.plot_signal(V, t, m, h, n, ina, ik, il)
+        return np.array([V, m, h, n, ina, ik, il])
 
     def plot_signal(self, V, t, m, h, n, ina, ik, il):
         """ Plot the currents, gating variables, injected current """
+
         plt.title('Hodgkin-Huxley Neuron')
         plt.plot(t, V, 'k')
         plt.ylabel('V (mV)')
@@ -91,5 +103,3 @@ class Neuron:
         plt.ylabel('$I_{inj}$ ($\\mu{A}/cm^2$)')
         plt.ylim(-1, 31)
         plt.show()
-
-Neuron()

@@ -73,5 +73,5 @@ class MembraneCurrents:
 
     # External/Injected Current Applied to Membrane
     def I_inj(self, t):
-        return 10 * (t > 100) - 100 * (t > 200) + 35 * (t > 300)
+        return 10 * (t > 100) - 10 * (t > 200) + 35 * (t > 300)
 

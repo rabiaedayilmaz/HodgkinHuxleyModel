@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hodgkin Huxley Model</title>
+    <style type="text/css">
+        .header{
+            text-align: center;
+            background-color: rgb(106,90,205);
+            height: 70px;
+            line-height: 70px;
+            color: #F5F5DC;
+        }
+        .footer{
+            background-color: rgb(106,90,205);
+            height: 50px;
+            background-clip: content-box, padding-box;
+        }
+        .author {
+            padding-top: 7px;
+            padding-left: 15px;
+            color:#EDEADE;
+        }
+        .container{
+            background-color: #EDEADE;
+        }
+        body {
+            background-color: #F9F6EE;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>
+            Hodgkin-Huxley Neuron Spiking Model
+        </h2>
+    </div>
+    <header>
+      <div class="container">
+        <h2 class="logo">Model Simulations</h2>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('membrane_voltage') }}">Membrane Voltage</a></li>
+            <li><a href="{{ url_for('membrane_currents') }}">Membrane Currents</a></li>
+              <li><a href="{{ url_for('gating_vars') }}">Gating Variables</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="footer">
+        <p class="author">
+            <a href = "mailto: edayilmxz@outlook.com" style="color:#EDEADE;">Contact Me</a><br>
+            By Rabia Eda Yilmaz
+        </p>
+    </div>
+</body>
+</html>
