@@ -6,7 +6,7 @@
 
 ### Web Application
 
-Website is alive [here](hodgkin-huxley-model-v2.onrender.com).
+Website is alive [here](https://hodgkin-huxley-model-v2.onrender.com/).
 
 This repository and application is to simulate the neuron spiking model for given parameters. Without changing default parameters, a classic spiking activation can be observed. There are two sections in the application: Model Simulations and Initial Parameters Control Panel. 
 
