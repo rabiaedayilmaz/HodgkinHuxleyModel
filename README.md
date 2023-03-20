@@ -2,7 +2,7 @@
 
 # Hodgkin Huxley Model
 
-![Web IU](/assets/main-screen-hh.png/)
+![Web IU]([/assets/main-screen-hh.png/](https://github.com/rabiaedayilmaz/HodgkinHuxleyModel/blob/v2/assets/circuit_hh_model.png))
 
 ## How to Use
 
