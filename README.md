@@ -1,5 +1,7 @@
 # Hodgkin Huxley Model
 
+![Web IU](/assets/main-screen-hh.png/)
+
 ## How to Use
 
 ### Web Application
