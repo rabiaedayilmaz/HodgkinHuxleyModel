@@ -21,7 +21,7 @@ To run the code locally, there are two default options: only run core, and run b
 First move to folder:
 
 ```bash
-cd HodgkingHuxleyModel
+cd HodgkinHuxleyModel
 ```
 
 To run core only and plot functions locally:
