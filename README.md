@@ -222,11 +222,11 @@ I_L=g_L\left(u-E_L\right)
 .If all channels are open, they transmit currents with a maximum conductance g_Na and g_K, respectively. However, normally some channel will be blocked. The advancement of HH model is that it demonstrates us how the effective resistance of a channel changes as a function of time and voltage. They also introduced gating variables, m, n, and h to model that are the probability of that a channel is open at a given moment in time. The combination of m and h controls the Na+ channels and K+ gates are controlled by n. The conductance of sodium channels can be modeled as
   
 ```math
-\frac{1}{R_{Na}=g_{Na}m^3h}
+R_{Na}=\frac{1}{g_{Na}m^3h}
 ```
 while m is the activation of the channel and h is inactivation. The conductance of potassium is 
 ```math 
-\frac{1}{R_K=g_Kn^4}
+R_{K}=\frac{1}{g_Kn^4}
 ```
 while n is the activation of the channel. 
 Finally, Hodgkin and Huxley formulated the three ion currents on the Equation 2 and obtained:
