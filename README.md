@@ -8,7 +8,7 @@
 
 This repository and application is to simulate the neuron spiking model for given parameters. Without changing default parameters, a classic spiking activation can be observed. There are two sections in the application: Model Simulations and Initial Parameters Control Panel. 
 
-**Model Simulations:** This section is for visualizing the simulation. There are three scopes: Membrane Voltage, Membrane Currents, and Gating Variables. You can inspect the results by clicking on them. If you directly check the scopes, default real life situation model will be visualized.
+**Model Simulations:** This section is for visualizing the simulation. There are three scopes: Membrane Voltage, Membrane Currents, and Gating Variables. You can inspect the results by clicking on them. If you directly check the scopes, i.e. without changing anything, default real life situation model will be visualized.
 
 **Initial Parameters Control Panel:** This section is for changing initial values of parameters. En passant, you can enter the initial values and scenarios to experiment, and observe the results from the Model Simulation section. 
 
