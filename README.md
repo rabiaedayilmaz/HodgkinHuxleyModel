@@ -2,13 +2,36 @@
 
 ## How to Use
 
-- [ ] coming soon idk 
+### Web Application
 
-- [ ] also web interface because we love user friendly apps
+This repository and application is to simulate the neuron spiking model for given parameters. Without changing default parameters, a classic spiking activation can be observed. There are two sections in the application: Model Simulations and Initial Parameters Control Panel. 
 
-- [ ] fix this fckn latex problem
+**Model Simulations:** This section is for visualizing the simulation. There are three scopes: Membrane Voltage, Membrane Currents, and Gating Variables. You can inspect the results by clicking on them. If you directly check the scopes, default real life situation model will be visualized.
 
-- [ ] read/review this readme once for gods sake 
+**Initial Parameters Control Panel:** This section is for changing initial values of parameters. En passant, you can enter the initial values and scenarios to experiment, and observe the results from the Model Simulation section. 
+
+### Code
+
+There are two folders in ```src``` for a specific purpose. ```core``` folder contains the simulation engine and calculates function according to given/default parameters. ```web``` folder, self-explainingly, contains web application powered by Flask, that employs simulation engine in the backend. 
+
+To run the code locally, there are two default options: only run core, and run both core and web. 
+
+First move to folder:
+
+```
+cd HodgkingHuxleyModel
+```
+
+To run core only and plot functions locally:
+
+```
+python -m src.core
+```
+To run web and create a local server that will be online at ```http://127.0.0.1:5000```:
+
+```
+flask --app src.web.app run --debug
+```
 
 ## Theory
 ### Part 1
