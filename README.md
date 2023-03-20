@@ -20,18 +20,18 @@ To run the code locally, there are two default options: only run core, and run b
 
 First move to folder:
 
-```python
+```bash
 cd HodgkingHuxleyModel
 ```
 
 To run core only and plot functions locally:
 
-```python
+```bash
 python -m src.core
 ```
 To run web and create a local server that will be online at ```http://127.0.0.1:5000```:
 
-```
+```bash
 flask --app src.web.app run --debug
 ```
 
