@@ -34,6 +34,13 @@ To run web and create a local server that will be online at ```http://127.0.0.1:
 ```bash
 flask --app src.web.app run --debug
 ```
+## To-Do
+
+- [ ] Fix reset button
+- [ ] Fix t parameter
+- [ ] Add reversal ion potentials to parameter panel
+- [ ] Add ion potentials parameter to parameter panel
+- [ ] Fix cracking control panel when input is blank or not int/float
 
 ## Theory
 ### Part 1
