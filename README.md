@@ -12,6 +12,8 @@ This repository and application is to simulate the neuron spiking model for give
 
 **Initial Parameters Control Panel:** This section is for changing initial values of parameters. En passant, you can enter the initial values and scenarios to experiment, and observe the results from the Model Simulation section. 
 
+P.S. It may take a few minutes in some cases to render website on the cloud.
+
 ### Code
 
 There are two folders in ```src``` for a specific purpose. ```core``` folder contains the simulation engine and calculates function according to given/default parameters. ```web``` folder, self-explainingly, contains web application powered by Flask, that employs simulation engine in the backend. 
