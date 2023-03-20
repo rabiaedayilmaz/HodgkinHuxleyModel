@@ -107,15 +107,7 @@ E\ =\ E^0\ -\ \frac{0.0592V}{n}\log_{10}{Q\ \ \ \ (9)}
 ```
 
 **Goldman-Hodgkin-Katz Equation:**  While the Nernst Equation provides a quantitative measure of equality that exists between chemical and electrical gradients for individual ions, Goldman Equation calculates the predicted resting membrane potential that reflects the relative contributions of the chemical concentration gradients and relative membrane permeability for a multitude ions collectively[^3]. 
-It is described as following, where Em is the membrane potential, R is the universal gas constant, T is the temperature in Kelvin, F is the Faraday constant, pM is the permeability for 
-```math
-M+/-
-```
-and 
-```math
-[M+/-]
-```
-is the concentration of M+/- for input(in) or output(out).
+It is described as following, where Em is the membrane potential, R is the universal gas constant, T is the temperature in Kelvin, F is the Faraday constant, pM is the permeability the concentration of M+/- for input(in) or output(out).
 
 ```math
 E_m=\frac{RT}{F}\ln{\left(\frac{\sum_{i}^{n}{P_{M_i^+}\left[M_i^+\right]_{out}+}\sum_{j}^{m}{P_j^-\left[A_j^-\right]_{in}}}{\sum_{i}^{n}{P_{M_i^+}\left[M_i^+\right]_{in}+}\sum_{j}^{m}{P_j^-\left[A_j^-\right]_{out}}}\right)}\ \ \ \ (10)
